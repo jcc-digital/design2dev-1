@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" type="text/css">
+
+    <title>Figma Design to Development by Jennifer Carmin Campos</title>
+</head>
+
+<body>
+
+    <!--Sticky Header / Nav-->
+    <header class="container">
+        <nav>
+            <!--Logo-->
+            <img src="./images/logo.png" alt="Domo logo in full colour, dark blue and light blue" class="logo"/>
+            
+            <!--Menu-->
+            <!--Responsive Only-->
+            <div id="menu" class="fas fa-bars toggle-btn" onclick="navToggle();"></div>
+
+            <ul class="navbar">
+                <div class="dropdown" data-dropdown>
+                    <button class="navbar-links" data-dropdown-button>Products <i class="fa fa-chevron-down" data-dropdown-button></i></button>
+                    <div class="dropdown-menu information-grid">
+                        <div>
+                            <div class="dropdown-heading" onclick="navToggle();">Our Products</div>
+                            <div class="dropdown-links">
+                                <a href="#" class="navbar-links">All</a>
+                                <a href="#" class="navbar-links">Biometrics</a>
+                                <a href="#" class="navbar-links">Mobile App</a>
+                            </div>
+                        </div>
+                    </div><!--End: Dropdown Links-->
+                </div><!--End: Dropdown Menu-->
+
+                <div class="dropdown" data-dropdown>
+                    <button class="navbar-links" data-dropdown-button onclick="navToggle();">Solutions <i class="fa fa-chevron-down" data-dropdown-button></i></button>
+                    <div class="dropdown-menu information-grid">
+                        <div>
+                            <div class="dropdown-heading">Our Solutions</div>
+                            <div class="dropdown-links">
+                                <a href="#" onclick="navToggle();" class="navbar-links">All</a>
+                                <a href="#" onclick="navToggle();" class="navbar-links">Regulations</a>
+                                <a href="#" onclick="navToggle();" class="navbar-links">Labour Costs</a>
+                            </div>
+                        </div>
+                    </div><!--End: Dropdown Links-->
+                </div><!--End: Dropdown Menu-->
+
+                <li class="navitem"><a href="#">Pricing</a></li>
+
+                <div class="dropdown" data-dropdown>
+                    <button class="navbar-links" data-dropdown-button>Resources <i class="fa fa-chevron-down" data-dropdown-button></i></button>
+                    <div class="dropdown-menu information-grid">
+                        <div>
+                            <div class="dropdown-heading">Insights &amp; Tools</div>
+                            <div class="dropdown-links">
+                                <a href="#" class="navbar-links">All</a>
+                                <a href="#" class="navbar-links">Blog</a>
+                                <a href="#" class="navbar-links">Tools</a>
+                            </div>
+                        </div>
+                    </div><!--End: Dropdown Links-->
+                </div><!--End: Dropdown Menu-->
+                <div class="dropdown" data-dropdown>
+                    <button class="navbar-links" data-dropdown-button>About domo <i class="fa fa-chevron-down" data-dropdown-button></i></button>
+                    <div class="dropdown-menu information-grid">
+                        <div>
+                            <div class="dropdown-heading">Our Company</div>
+                            <div class="dropdown-links">
+                                <a href="#" class="navbar-links">Overview</a>
+                                <a href="#" class="navbar-links">Contact Us</a>
+                                <a href="#" class="navbar-links">Why domo?</a>
+                            </div>
+                        </div>
+                    </div><!--End: Dropdown Links-->
+                </div><!--End: Dropdown Menu-->
+            </ul>
+            <!--Nav buttons-->
+            <div class="nav-btns">
+                <button type="button" class="menu-btn">Sign In</button>
+                <button type="button" class="menu-btn">Try it for free</button>
+            </div>
+        </nav>
+
+        <!--Hero Banner-->
+        <section class="hero-section">
+            <div class="hero-content">
+
+                <div class="hero-text">
+                    <h1>We understand the complexity of the Construction Business</h1>
+                    <p>Projects are unique, Sites are unique, Scale is variable, Workers change, subcontractors change along with cost and timeline. Did we miss anything? We have designed domo to handle all of these for you and much more!</p>
+                    
+                    <div class="hero-btns">
+                        <div class="btns">
+                            <button type="button" id="btn1">Request a Demo</button>
+                            <button type="button" id="btn2">Try it for free</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-img">
+                    <img src="./images/hero-img.png" alt="Construction Workers"/>
+                </div>
+    
+            </div>
+        </section>
+        <!--End: Hero Banner-->
+
+    </header>
+
+    <main>
+        <!--Trusted-->
+        <section class="trusted">
+            <div class="frame">
+                <div>
+                    <h3>domo is trusted by multiple workspaces across industries to help transform their antiquated workplace</h3>
+                </div>
+                <div class="trusted-imgs">
+                    <img src="./images/img1.png" alt=""/>
+                    <img src="./images/img2.png" alt=""/>
+                    <img src="./images/img3.png" alt=""/>
+                    <img src="./images/img4.png" alt=""/>
+                    <img src="./images/img5.png" alt=""/>
+                </div>
+            </div>
+        </section>
+        <!--End: Trusted-->
+
+        <!--Regulations-->
+        <section class="regs">
+            <div class="col2-copy">
+                <h3>Keep regulators happy with enhanced compliance.</h3>
+                <p>Construction projects spend more on worker comp fines than any other industry in the U.S. Reduce this exposure by accurately tracking.</p>
+            </div>
+
+            <div class="cards">
+                <div class="cards-item regs-active">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempora dolorem provident animi sunt sed accusamus, exercitationem repellat suscipit reiciendis.</p>
+                    <button type="button" class="text-cta">learn more <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                </div>
+
+                <div class="cards-item">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempora dolorem provident animi sunt sed accusamus, exercitationem repellat suscipit reiciendis.</p>
+                    <button type="button" class="text-cta">learn more <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                </div>
+
+                <div class="cards-item">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempora dolorem provident animi sunt sed accusamus, exercitationem repellat suscipit reiciendis.</p>
+                    <button type="button" class="text-cta">learn more <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                </div>
+                
+                <div class="cards-item">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempora dolorem provident animi sunt sed accusamus, exercitationem repellat suscipit reiciendis.</p>
+                    <button type="button" class="text-cta">learn more <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                </div>
+            </div>
+        </section>
+        <!--End: Regulations-->
+
+
+        <!--About-->
+        <section class="about">
+            <div class="col2-copy">
+                <h3>Save on labor costs with Contactless Clocking.</h3>
+                <p>Facial biometric clocks allow for the most accurate and super fast clocking experience. When there are no long lines to clock-in and out, workers comply more and you get accurate data. Manage labor costs more efficiently. Workers love interacting with FR Clocks. Build Employee trust and step into the future with Workerly! </p>
+            </div>
+
+            <div class="costs-cols">
+                <div class="costs-cols-item">
+                    <img src="./images/costs1.png"/>
+                </div>
+                <div class="costs-cols-item">
+                    <img src="./images/costs2.png"/>
+                </div>
+                <div class="costs-cols-item">
+                    <img src="./images/costs-3b.png"/>
+                </div>
+            </div>
+        </section>
+        <!--End: About-->
+
+        <section class="portfolio">
+            <div class="port-container">
+                <div class="port-copy">
+                    <h3>One platform that does it all ...</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tempus sed nunc posuere lacus rhoncus, neque at nulla. Malesuada gravida neque leo diam. Nunc, felis fringilla luctus felis aliquet tempor vitae.</p>
+                </div>
+                <div class="port-imgs">
+                    <div class="img-col1">
+                        <div>
+                            <img src="./images/portfolio1.png" alt="Construction workers team"/>
+                            <span class="overlay-txt">Upskill your workers with integrated training management.</span>
+                        </div>
+                        <div>
+                            <img src="./images/portfolio2.png" alt="Construction work male"/>
+                            <span class="overlay-txt">Assign workers to shift based on training certifications.</span>
+                        </div>
+                    </div>
+                    <div class="img-col2">
+                        <div>
+                            <img src="./images/portfolio3.png" alt="Construction workers talking"/>
+                            <span class="overlay-txt">Track & Manage incident reporting on job sites.</span>
+                        </div>
+                        <div>
+                            <img src="./images/portfolio4.png" alt="Construction workers discussing job needs"/>
+                            <span class="overlay-txt">Enables skill based pay rates with Shift differential pay.</span>
+                        </div>
+                        <div>
+                            <img src="./images/portfolio5.png" alt="Construction company call center"/>
+                            <span class="overlay-txt">Let Workers manage their profile from one APP.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app">
+            <div class="app-frame">
+                <img src="./images/app-imgs.png" alt="App images"/>
+                <div class="app-copy">
+                    <p class="p-lrg">domo APP enhances workforce engagement with real time alerts and notification. Employees can keep track of their schedule, time-off and pay details from their smartphones.</p>
+                    <div class="app-icons">
+                        <p class="p-sm">Download the App and explore.</p>
+                        <div class="app-icon-downloads">
+                            <img src="./images/google-play.png" alt="Google Playstore"/>
+                            <img src="./images/app-store.png" alt="Google Playstore"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-copy">
+                <div class="cta-copy-frame">
+                    <div class="cta-copy-col">
+                        <div class="cta-copy-txt">
+                            <div class="cta-copy-headings">
+                                <h6>Join over 15,000+ tech people</h6>
+                                <h4>Ready to enroll?</h4>
+                                <p>Connect with our Solution's team today to schedule a demo and start your no strings attached pilot.</p>
+                            </div>
+                        </div>
+                        <button type="button" class="primary-btn">Request a Demo</button>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/cta-img.png"/>
+        </section>
+
+        <footer>
+            <div class="enews">
+                <div class="enews-copy">
+                    <h3>Subscribe to our Future of Work Newsletter and learn more about modern digital workplaces</h3>
+                    <form class="inputSearch">
+                        <div class="enews-field">
+                            <label>
+                                <input type="email" id="email" pattern=".+@globex\.com" size="30" required for="email" aria-placeholder="Enter Email" placeholder="Enter your email">
+                            </label>
+                            <!-- <input type="email" id="email" pattern=".+@globex\.com" size="30" required>     -->
+                            <button type="button" class="enews-field-btn primary-btn"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
+                        </div>
+                    </form>
+                </div><!--enews-copy-->
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-top divider">
+                    <div class="quicklinks">
+                        <div class="quicklinks-col">
+                            <h5>DOMO</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">How are we different?</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Integrate with your systems</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="quicklinks-col">
+                            <h5>DOMO</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">How are we different?</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Integrate with your systems</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="quicklinks-col">
+                            <h5>DOMO</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">How are we different?</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Integrate with your systems</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="quicklinks-col">
+                            <h5>DOMO</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">How are we different?</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Integrate with your systems</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="quicklinks-col">
+                            <h5>DOMO</h5>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">How are we different?</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Integrate with your systems</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div><!--End: Footer top-->
+                
+                <div class="footer-btm">
+                    <p id="copyright">&copy; Copyright 2023. All Rights Reserved.</p>
+                    <div id="social">
+                        <div class="social-icons">
+                            <div><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div><i class="fa-brands fa-facebook-f"></i></div>
+                            <div><i class="fa-brands fa-twitter"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!--scripts-->
+    <script src="./js/main.js" defer></script>
+
+</body>
+
+</html>
