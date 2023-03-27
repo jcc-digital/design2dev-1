@@ -13,6 +13,8 @@ I am challenging my #development skills to not forget what I have learned over t
 The video below shows my progress using #CSS #flexbox. I am first developing the desktop version, and then I will develop the responsive version.
 Any feedback is welcomed, and I am looking forward to hearing from fellow frontend developers. I will also revisit this project when done to refactor the code.
 
+
+### Updates 
 March 20, 2023:
 Progress 1: https://www.youtube.com/watch?v=st9TEmULS_g
 
