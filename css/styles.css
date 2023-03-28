@@ -591,15 +591,21 @@ nav li {
 /***** About *****/
 /***** About *****/
 .about {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 75px 0 0 150px;
-    gap: 50px;
+    gap: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 82px;
+    gap: 5rem;
+    background-color: #FCFCFF;
 }
 
-.about .col2-copy {
+/* .about .col2-copy {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -622,21 +628,21 @@ nav li {
     flex-wrap: wrap;
     font-size: 1.125rem;
     line-height: 160%;
-}
+} */
 
 .costs-cols {
     display: flex;
     position: absolute;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 0px 170px;
+    /* padding: 0px 170px; */
     gap: 40px;
     padding-top: 30px 0;
-    width: 1470px;
+    /* width: 1470px;
     height: 314px;
-    z-index: 1;
-    margin-top: 500px;
+    z-index: 1; */
+    margin-top: 12em;
 }
 
 .costs-cols-item {
@@ -1006,20 +1012,21 @@ footer {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 748px;    
+    gap: 7em;    
 }
 
 #copyright {
     display: flex;
     flex-direction: column;
-    font-size: 0.875;
+    font-size: 0.875rem;
+    align-items: flex-start;
 }
 
 #social {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     padding: 0px;
 }
 
