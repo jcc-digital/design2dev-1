@@ -23,17 +23,41 @@
         <nav>
             <!--Logo-->
             <img src="./images/logo.png" alt="Domo logo in full colour, dark blue and light blue" class="logo"/>
-            
-            <!--Menu-->
-            <!--Responsive Only-->
-            <div id="menu" class="fas fa-bars toggle-btn" onclick="navToggle();"></div>
 
-            <ul class="navbar">
+            <!--Responsive-->
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            
+            <!--Mobile Menu : Test-->
+            <ul id="mobile-navbar">
+                <li><a href="#">Products</a></li>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Biometrics</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Our Solutions</a></li>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Biometrics</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <!--Desktop Menu-->
+            <ul class="navbar" id="desktop-navbar">
                 <div class="dropdown" data-dropdown>
                     <button class="navbar-links" data-dropdown-button>Products <i class="fa fa-chevron-down" data-dropdown-button></i></button>
                     <div class="dropdown-menu information-grid">
                         <div>
-                            <div class="dropdown-heading" onclick="navToggle();">Our Products</div>
+                            <div class="dropdown-heading">Our Products</div>
                             <div class="dropdown-links">
                                 <a href="#" class="navbar-links">All</a>
                                 <a href="#" class="navbar-links">Biometrics</a>
@@ -44,14 +68,14 @@
                 </div><!--End: Dropdown Menu-->
 
                 <div class="dropdown" data-dropdown>
-                    <button class="navbar-links" data-dropdown-button onclick="navToggle();">Solutions <i class="fa fa-chevron-down" data-dropdown-button></i></button>
+                    <button class="navbar-links" data-dropdown-button>Solutions <i class="fa fa-chevron-down" data-dropdown-button></i></button>
                     <div class="dropdown-menu information-grid">
                         <div>
                             <div class="dropdown-heading">Our Solutions</div>
                             <div class="dropdown-links">
-                                <a href="#" onclick="navToggle();" class="navbar-links">All</a>
-                                <a href="#" onclick="navToggle();" class="navbar-links">Regulations</a>
-                                <a href="#" onclick="navToggle();" class="navbar-links">Labour Costs</a>
+                                <a href="#" class="navbar-links">All</a>
+                                <a href="#" class="navbar-links">Regulations</a>
+                                <a href="#" class="navbar-links">Labour Costs</a>
                             </div>
                         </div>
                     </div><!--End: Dropdown Links-->
@@ -85,13 +109,15 @@
                         </div>
                     </div><!--End: Dropdown Links-->
                 </div><!--End: Dropdown Menu-->
-            </ul>
+            </ul><!--End: navbar-links-->
+
             <!--Nav buttons-->
             <div class="nav-btns">
                 <button type="button" class="menu-btn">Sign In</button>
                 <button type="button" class="menu-btn">Try it for free</button>
             </div>
-        </nav>
+
+        </nav><!--End: Nav-->
 
         <!--Hero Banner-->
         <section class="hero-section">
