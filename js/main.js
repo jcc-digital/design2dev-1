@@ -16,31 +16,19 @@ document.addEventListener("click", e => {
 })
 
 
+//For Sticky Nav on scroll
+window.addEventListener("scroll", function() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("sticky", window.scrollY > 0);
+})
+
+
 //For Toggle: Get Toggle and show first element in the array
 const toggleBtn = document.getElementsByClassName('toggle-btn')[0]
-//Get navbar links
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+//Get navbar
+const navbar = document.getElementsByClassName('navbar')[0]
 
 //Whenever the toggle is clicked run this function to appear and disapper on click
 toggleBtn.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+  navbar.classList.toggle('active')
 })
-
-let menu = document.querySelector('#menu')
-let navbar = document.querySelector('.navbar');
-let header2 = document.querySelector('.header-2');
-
-function navToggle(){
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('nav-toggle');
-}
-
-window.addEventListener('scroll',function(){
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('nav-toggle');
-  if(window.scrollY > 60){
-    header2.classList.add('sticky');
-  }else {
-    header2.classList.remove('sticky');
-  }
-});
