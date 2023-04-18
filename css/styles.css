@@ -52,6 +52,23 @@ p {
     flex-grow: 1;
 }
 
+/*** Selections ***/
+::selection {
+    background-color: #F2EDFE;
+    /*background-color: #EDF4F0;*/
+}
+
+.regs-active p::selection,
+.regs-active h4::selection,
+.regs-active button::selection {
+    background-color: rgba(40, 45, 108, 1);
+}
+
+.port-imgs .overlay-txt::selection {
+    background-color: rgba(40, 45, 108, 1);
+}
+/*** End: Selections ***/
+
 
 /*** Hero and Nav ***/
 /*** Hero and Nav ***/
@@ -241,10 +258,24 @@ nav li {
 }
 /* End: Drop-down Links */
 
+
+/* Mobile Menu */
 #mobile-navbar {
     display: none;
 }
 
+/* rotate first and third bar on toggle */
+.toggle-btn.active .bar:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle-btn.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle-btn.active .bar:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 
 /*** Menu Responsive ***/
 
@@ -340,10 +371,6 @@ nav li {
         display: flex;
     }
 
-    /* .dropdown, .dropdown-links, .dropdown-heading, .navbar-links {
-        display: none;
-    } */
-
     .dropdown-heading {
         display: none;
     }
@@ -353,7 +380,19 @@ nav li {
         position: relative !important;
         margin: auto !important;
         gap: 30px !important;
+        flex-wrap: wrap;
     }
+
+    /*#mobile-navbar {
+        display: flex;
+        align-items: self-start;
+        gap: 3em;
+        justify-content: center;
+        flex-direction: column;
+        align-self: flex-end;
+        padding-top: 5em;
+        background-color: #fff;
+    }*/
 }
 /* End: 1200px Responsive */
 
@@ -570,6 +609,7 @@ nav li {
     align-items: center;
     padding: 0px;
     gap: 2em;
+    max-width: 90%;
 }
 
 .col2-copy h3 {
@@ -889,10 +929,10 @@ nav li {
 
 
 /* 400px Responsive */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 960px) {
     .app-frame img {
         display: flex;
-        max-width: 16em;
+        max-width: 18em;
         justify-content: center;
     }
 }
@@ -933,6 +973,7 @@ nav li {
     padding: 0px;
     gap: 5em;
     height: auto;
+    max-width: 90%;
 }
 
 .p-lrg {
@@ -1036,7 +1077,7 @@ nav li {
 }
 
 .cta img {
-    max-width: 30em;
+    max-width: 20em;
 }
 
 /* 400px Responsive */
