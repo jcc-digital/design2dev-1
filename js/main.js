@@ -1,4 +1,4 @@
-//Drop-down Menu Links
+//Deskop: Drop-down Menu Links
 document.addEventListener("click", e => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]")
   if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
@@ -16,19 +16,27 @@ document.addEventListener("click", e => {
 })
 
 
-//For Sticky Nav on scroll
+//Deskop & Mobile: For Sticky Nav on scroll
 window.addEventListener("scroll", function() {
   const nav = document.querySelector("nav");
   nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
 
-//For Toggle: Get Toggle and show first element in the array
-const toggleBtn = document.getElementsByClassName('toggle-btn')[0]
-//Get navbar
-const navbar = document.getElementsByClassName('navbar')[0]
+//Hamburger Menu
+//Get toggle button and mobile nav element
+const toggleBtn = document.querySelector('.toggle-btn');
+const mobileNav = document.querySelector('#mobile-navbar');
 
-//Whenever the toggle is clicked run this function to appear and disapper on click
+// add click event listener to toggle button
 toggleBtn.addEventListener('click', () => {
-  navbar.classList.toggle('active')
-})
+    // toggle active class on button
+    toggleBtn.classList.toggle('active');
+    
+    // toggle display of mobile nav element
+    if (mobileNav.style.display === 'block') {
+      mobileNav.style.display = 'none';
+    } else {
+      mobileNav.style.display = 'block';
+    }
+  });
